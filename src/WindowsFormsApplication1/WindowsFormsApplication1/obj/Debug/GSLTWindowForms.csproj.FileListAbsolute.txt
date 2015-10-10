@@ -1,0 +1,10 @@
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\GSLTWindowForms.csprojResolveAssemblyReference.cache
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\GSLTWindowForms.csproj.GenerateResource.Cache
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\LeapCSharp.NET4.0.dll
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Documents\work\ellak_gslt\github\GSLT\src\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
