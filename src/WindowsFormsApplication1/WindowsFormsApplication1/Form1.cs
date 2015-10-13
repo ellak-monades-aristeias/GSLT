@@ -19,13 +19,12 @@ namespace WindowsFormsApplication1
 
         public Form1()
         {
-            InitializeComponent();
-            initializeLeapListener();
+            InitializeComponent();            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            lblStatus.Text = "Paused";
+            lblStatus.Text = "Paused";            
             leap_controller.RemoveListener(leap_listener);
         }
 

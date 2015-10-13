@@ -8,8 +8,8 @@ namespace LeapGSLT
 {
     public class LeapListener : Listener
     {
-        private Stack gesture_stack; //this stack keeps the gesture to identify potential commands for starting/stoping the program
-        private Stack letter_stack;
+        private Stack gesture_stack = null; //this stack keeps the gesture to identify potential commands for starting/stoping the program
+        private Stack letter_stack = null;
 
         private void SafeWriteLine(String line)
         {
@@ -147,6 +147,9 @@ namespace LeapGSLT
                 }
 
                 // Get fingers
+                List<bool> fingers_vertical_flags = new List<bool>();
+                List<bool> fingers_horizontal_flags = new List<bool>();
+
                 foreach (Finger finger in hand.Fingers)
                 {
                     SafeWriteLine("    Finger id: " + finger.Id
@@ -156,6 +159,11 @@ namespace LeapGSLT
 
                     // Get finger bones
                     Bone bone;
+
+                    List<Vector> bone_directions = new List<Vector>();
+
+                    bool is_all_vertical = true;
+                    bool is_all_horizontal = true;
                     foreach (Bone.BoneType boneType in (Bone.BoneType[])Enum.GetValues(typeof(Bone.BoneType)))
                     {
                         bone = finger.Bone(boneType);
@@ -163,10 +171,67 @@ namespace LeapGSLT
                                     + ", start: " + bone.PrevJoint
                                     + ", end: " + bone.NextJoint
                                     + ", direction: " + bone.Direction);
+
+                        bone_directions.Add(bone.Direction);
+
+                        bool is_vertical = false;
+                        bool is_horizontal = false;
+                        if (bone.Direction.Pitch == 90.0 && bone.Direction.Yaw == 0.0)
+                        {
+                            is_vertical = true;
+                        }
+                        else if (bone.Direction.Pitch == 0.0 && bone.Direction.Yaw == 90.0)
+                        {
+                            is_horizontal = true;
+                        }
+
+                        if (!is_vertical)
+                        {
+                            is_all_vertical = false;
+                        }
+                        if (!is_horizontal)
+                        {
+                            is_all_horizontal = false;
+                        }
                     }
+
+                    fingers_horizontal_flags.Add(is_all_horizontal);
+                    fingers_vertical_flags.Add(is_all_vertical);
                 }
 
 
+                //now, based on the vertical, horizontal position, try to identify candidate letters
+                bool all_fingers_vertical = true;
+                bool all_fingers_horizontal = true;
+                for (int i = 0; i < fingers_horizontal_flags.Count; i++)
+                {
+                    if (!fingers_horizontal_flags[i])
+                    {
+                        all_fingers_horizontal = false;
+                    }
+                }
+                for (int i = 0; i < fingers_vertical_flags.Count; i++)
+                {
+                    if (!fingers_vertical_flags[i])
+                    {
+                        all_fingers_vertical = false;
+                    }
+                }
+
+                
+                List<char> current_list_2 = new List<char>();                 
+
+                if (all_fingers_horizontal)
+                {
+                    //@todo
+                }
+                else if (all_fingers_vertical)
+                {
+                    //candidates are Â
+                    current_list_2.Add('B');
+                }
+                
+                candidate_stack.Push(current_list_2);
             }            
 
             // Get tools
