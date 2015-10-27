@@ -15,4 +15,4 @@
 |   3   |Καταγραφή απαιτήσεων pdf|https://github.com/ellak-monades-aristeias/GSLT/blob/master/deliverables/GSLT_del_1.pdf|
 
 
-> Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την [ΕΕΛ/ΛΑΚ](https://ellak.gr/)
+ 
