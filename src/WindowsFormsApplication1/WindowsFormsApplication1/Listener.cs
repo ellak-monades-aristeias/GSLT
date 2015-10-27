@@ -150,6 +150,13 @@ namespace LeapGSLT
                 List<bool> fingers_vertical_flags = new List<bool>();
                 List<bool> fingers_horizontal_flags = new List<bool>();
 
+                bool is_all_vertical = true;
+                bool is_all_horizontal = true;
+                int horizontal_count = 0;
+                int vertical_count = 0;
+                int diagonal_count = 0;
+                int inversed_diagonal_count = 0;
+                int closed_count = 0;
                 foreach (Finger finger in hand.Fingers)
                 {
                     SafeWriteLine("    Finger id: " + finger.Id
@@ -162,8 +169,6 @@ namespace LeapGSLT
 
                     List<Vector> bone_directions = new List<Vector>();
 
-                    bool is_all_vertical = true;
-                    bool is_all_horizontal = true;
                     foreach (Bone.BoneType boneType in (Bone.BoneType[])Enum.GetValues(typeof(Bone.BoneType)))
                     {
                         bone = finger.Bone(boneType);
@@ -179,10 +184,24 @@ namespace LeapGSLT
                         if (bone.Direction.Pitch == 90.0 && bone.Direction.Yaw == 0.0)
                         {
                             is_vertical = true;
+                            vertical_count++;
                         }
                         else if (bone.Direction.Pitch == 0.0 && bone.Direction.Yaw == 90.0)
                         {
                             is_horizontal = true;
+                            horizontal_count++;
+                        }
+                        else if (bone.Direction.Pitch == 45.0 && bone.Direction.Yaw == 0.0)
+                        {
+                            diagonal_count++;
+                        }
+                        else if (bone.Direction.Pitch == 45.0 && bone.Direction.Yaw == 90.0)
+                        {
+                            inversed_diagonal_count++;
+                        }
+                        else if (bone.Direction.Pitch == 0.0 && bone.Direction.Yaw == 0.0)
+                        {
+                            closed_count++;
                         }
 
                         if (!is_vertical)
@@ -217,20 +236,98 @@ namespace LeapGSLT
                         all_fingers_vertical = false;
                     }
                 }
-
                 
                 List<char> current_list_2 = new List<char>();                 
 
                 if (all_fingers_horizontal)
                 {
-                    //@todo
+                   //candidates are 
                 }
                 else if (all_fingers_vertical)
                 {
                     //candidates are Â
                     current_list_2.Add('B');
                 }
-                
+                else if (closed_count == 5)
+                {
+                    current_list_2.Add('A');
+                }
+                else if (diagonal_count == 2 && closed_count == 3)
+                {
+                    current_list_2.Add('Ã');
+                }
+                else if (diagonal_count == 1 && closed_count == 2)
+                {
+                    current_list_2.Add('Ä');
+                    current_list_2.Add('Æ');
+                }
+                else if (diagonal_count == 1 && closed_count == 3)
+                {
+                    current_list_2.Add('Ç');
+                }
+                else if (horizontal_count == 2 && closed_count == 2)
+                {
+                    current_list_2.Add('È');
+                }
+                else if (closed_count == 4 && vertical_count == 1)
+                {
+                    current_list_2.Add('É');
+                }
+                else if (closed_count == 2 && vertical_count == 1 && horizontal_count == 1)
+                {
+                    current_list_2.Add('K');
+                }
+                else if (horizontal_count == 3 && closed_count == 1)
+                {
+                    current_list_2.Add('Ë');
+                    current_list_2.Add('Ì');
+                }
+                else if (horizontal_count == 3 && closed_count == 2)
+                {
+                    current_list_2.Add('N');
+                    current_list_2.Add('Î');
+                }
+                else if (diagonal_count == 2 && closed_count == 2)
+                {
+                    current_list_2.Add('Ð');
+                }
+                else if (vertical_count == 3 && closed_count == 2)
+                {
+                    current_list_2.Add('Ï');
+                }
+                else if (diagonal_count == 1 && inversed_diagonal_count == 1)
+                {
+                    current_list_2.Add('Ñ');
+                }
+                else if (closed_count == 5)
+                {
+                    current_list_2.Add('Ó');
+                }
+                else if (closed_count == 4 && vertical_count == 1)
+                {
+                    current_list_2.Add('T');
+                }
+                else if (closed_count == 3 && vertical_count == 2)
+                {
+                    current_list_2.Add('Õ');
+                }
+                else if (horizontal_count == 3)
+                {
+                    current_list_2.Add('Ö');
+                }
+                else if (horizontal_count == 2 && closed_count == 1 && diagonal_count == 1)
+                {
+                    current_list_2.Add('×');
+                }
+                else if (horizontal_count == 3 && closed_count == 1 && diagonal_count == 1)
+                {
+                    current_list_2.Add('Ø');
+                }
+                else
+                {
+                    current_list_2.Add('Ù');
+                }
+                                
                 candidate_stack.Push(current_list_2);
             }            
 
@@ -319,6 +416,7 @@ namespace LeapGSLT
             {
                 SafeWriteLine("");
             }
+
         }
     }
 
