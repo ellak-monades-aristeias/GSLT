@@ -183,19 +183,19 @@ o   Άτομα που θέλουν να μάθουν την ελληνική �
 Προχωρήσαμε σε καταγραφή βίντεο και λήψη φωτογραφιών και αντιστοιχίσαμε τις
 χειρονομίες στα γράμματα όπως φαίνεται και στις επόμενες εικόνες.
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757117/7a5296aa-7cb1-11e5-9a9d-5df8f54175cb.png>)
 
 Εικόνα 1: Γράμμα Α
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757120/7a5473bc-7cb1-11e5-90e0-87c54b3fd211.png>)
 
 Εικόνα 2: Γράμμα Β
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757121/7a556632-7cb1-11e5-8b62-ba5f205c02f3.png>)
 
 Εικόνα 3: Γράμμα Γ
 
@@ -203,19 +203,19 @@ o   Άτομα που θέλουν να μάθουν την ελληνική �
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image004.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757122/7a578566-7cb1-11e5-84ba-7d490704b0e3.png>)
 
 Εικόνα 4: Γράμμα Δ
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image005.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757118/7a53118e-7cb1-11e5-862f-f5565851e0ad.png>)
 
 Εικόνα 5: Γράμμα Ε
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image007.jpg>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757119/7a538cd6-7cb1-11e5-88b4-188d59b3eec1.png>)
 
 Εικόνα 6: Γράμμα Ζ
 
@@ -225,7 +225,7 @@ o   Άτομα που θέλουν να μάθουν την ελληνική �
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image009.jpg>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757124/7a6fecaa-7cb1-11e5-956b-2591664a19a6.png>)
 
 Εικόνα 7: Γράμμα Η
 
@@ -233,19 +233,19 @@ o   Άτομα που θέλουν να μάθουν την ελληνική �
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image011.jpg>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757123/7a6f9994-7cb1-11e5-82cb-6ca72235bd3c.png>)
 
 Εικόνα 8: Γράμμα Θ
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image012.png>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757126/7a7198b6-7cb1-11e5-83ba-c8a9f4266a18.png>)
 
 Εικόνα 9: Γράμμα Ι
 
  
 
-![](<file:///C:\Users\IP\AppData\Local\Temp\msohtmlclip1\01\clip_image014.jpg>)
+![](<https://cloud.githubusercontent.com/assets/11737099/10757125/7a6ff6f0-7cb1-11e5-9be9-35f13a246e34.png>)
 
 Εικόνα 10: Γράμμα Κ
 
