@@ -53,6 +53,11 @@ namespace WindowsFormsApplication1
             // Have the listener receive events from the controller
             leap_controller.AddListener(leap_listener);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
         
     }    
 }
