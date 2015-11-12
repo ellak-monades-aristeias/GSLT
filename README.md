@@ -15,4 +15,8 @@
 |   3   |Καταγραφή απαιτήσεων pdf|https://github.com/ellak-monades-aristeias/GSLT/blob/master/deliverables/GSLT_del_1.pdf|
 
 
+Αναλυτικές οδηγίες, για τελικούς χρήστες και για developers
+
+
+
  
