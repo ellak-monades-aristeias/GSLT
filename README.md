@@ -18,7 +18,7 @@
 |   6   |Ολοκλήρωση συστήματος και τεκμηρίωση||
 
 
-Αναλυτικές οδηγίες, για [τελικούς χρήστες](https://github.com/ellak-monades-aristeias/GSLT/blob/master/%CE%B5%CE%B3%CF%87%CE%B5%CE%B9%CF%81%CE%AF%CE%B4%CE%B9%CE%BF%20%CF%87%CF%81%CE%AE%CF%83%CE%B7%CF%82.md) και για developers
+Αναλυτικές οδηγίες, για [τελικούς χρήστες](https://github.com/ellak-monades-aristeias/GSLT/blob/master/%CE%B5%CE%B3%CF%87%CE%B5%CE%B9%CF%81%CE%AF%CE%B4%CE%B9%CE%BF%20%CF%87%CF%81%CE%AE%CF%83%CE%B7%CF%82.md) και για [developers]()
 
 
 
