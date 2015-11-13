@@ -25,7 +25,7 @@ Project Acronym: **GSLT**
 
  
 
-Funded by Μονάδες Αριστείας Ανοιχτού Λογισμικού (ma.ellak.gr)
+
 
  
 
